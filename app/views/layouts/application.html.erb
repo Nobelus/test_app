@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet/less" href="/style.less">
-    <script src="/less.js"></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<link rel="stylesheet/less" href="/style.less">
+<script src="/less.js"></script>
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script>
+    $(function() {
+        $( "#user_date_of_birth" ).datepicker();
+    });
+</script>
+
+
+    <title>Junior Rails developer - Test</title>
 </head>
 <body>
     <header>
-        <div class="wrapper">
-            <img src="/gfx/logo.png">
-            <span>Twitter Clone</span>
-        </div>
+        <nav>
+        <ul >
+          <li><%= link_to "Регистрация", root_path %></li>
+          <li><%= link_to "Пользователи", allusers_path %></li>
+        </ul>
+        </nav>
     </header>
     <div id="content">
         <div class="wrapper">
@@ -21,7 +38,8 @@
     </div>
     <footer>
         <div class="wrapper">
-            Ribbit - A Twitter Clone Tutorial<img src="/gfx/logo-nettuts.png">
+            Junior Rails developer - Test
+            <img src="/assets/rails.png">
         </div>
     </footer>
 </body>

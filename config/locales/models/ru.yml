@@ -4,10 +4,10 @@ ru:
       user: Пользователь
     attributes:
       profile:
-        name: "Отображаемое имя"
-        surname: "Фамилия"
-        patronymic: "Отчество"
-        login: "Логин"
-        password: "Пароль"
-        email: "Электронная почта""
+        Name: "Отображаемое имя"
+        Surname: Фамилия
+        Patronymic: Отчество
+        Login: Логин
+        Password: Пароль
+        Email: Электронная почта
 

@@ -1,6 +1,10 @@
 TestApp::Application.routes.draw do
+
   resources :users
 
+  root to: 'users#new'
+
+  match '/allusers',    to: 'users#allusers'
 
   #get "users/new"
   #get "users/allusers"

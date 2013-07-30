@@ -1,7 +1,11 @@
 class User < ActiveRecord::Base
+  before_save :create_avatar_url
+  before_validation :prep_email
+
   attr_accessible :avatar_url, :date_of_birth, :email, :login, :name, :password, :password_confirmation, :patronymic, :surname
   has_secure_password
-  before_validation :prep_email
+
+
 
   validates :surname, presence: true
   validates :name, presence: true

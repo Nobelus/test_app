@@ -1,0 +1,18 @@
+<h1>Список пользователей</h1>
+<div class="CSSTableGenerator">
+<table>
+  <tr>
+    <th>Имя</th>
+    <th>Email</th>
+    <th>Аватар</th>
+  </tr>
+ 
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.name %></td>
+    <td><%= user.email %></td>
+    <td><img class="avatar" src="<%= user.avatar_url %>"></td>
+  </tr>
+<% end %>
+</table>
+<div>

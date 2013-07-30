@@ -1,0 +1,23 @@
+<div class="panel right">
+  <h1>Регистрация</h1>
+   
+  <%= form_for @user do |f| %>
+    <% if @user.errors.any? %>
+      <ul>
+        <% @user.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    <% end %>
+ 
+    <%= f.text_field :surname, placeholder: "Фамилия" %>
+    <%= f.text_field :name, placeholder: "Имя" %>
+    <%= f.text_field :patronymic, placeholder: "Отчество" %>
+    <%= f.text_field :date_of_birth, placeholder: "Дата рождения"   %>
+    <%= f.text_field :login, placeholder: "Логин" %>
+    <%= f.text_field :email, placeholder: "Email" %>
+    <%= f.password_field :password, placeholder: "Пароль" %>
+    <%= f.password_field :password_confirmation, placeholder: "Подтвердить пароль" %>
+    <%= f.submit "Создать аккаунт" %>
+  <% end %>
+</div>
