@@ -1,6 +1,9 @@
 TestApp::Application.routes.draw do
-  get "users/new"
-  get "users/allusers"
+  resources :users
+
+
+  #get "users/new"
+  #get "users/allusers"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
