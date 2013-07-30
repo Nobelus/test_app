@@ -15,7 +15,7 @@ development:
   database: newmysql
   pool: 5
   username: root
-  password: asdert
+  password: 
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -28,15 +28,16 @@ test:
   database: newmysql
   pool: 5
   username: root
-  password: asdert
+  password: 
   host: localhost
 
-#production:
-#  adapter: mysql2
-#  encoding: utf8
-#  reconnect: false
-#  database: test_app_production
-#  pool: 5
-#  username: root
-#  password:
-#  host: localhost
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: test_app_production
+  pool: 5
+  username: root
+  password:
+  host: localhost
+
